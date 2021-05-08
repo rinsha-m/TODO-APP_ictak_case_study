@@ -7,6 +7,7 @@ const validate=(e,callback)=>{
     {
     callback();
     }
+    
     else
     {
     alert("username or password is incorrect");
@@ -14,6 +15,7 @@ const validate=(e,callback)=>{
 }
 
 const redirect=()=>{
+    window.localStorage.setItem('user',JSON.stringify({uname:'admin'}));
     window.location='todo.html';
 }
 
